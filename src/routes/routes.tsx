@@ -1,12 +1,26 @@
 import { createBrowserRouter } from "react-router-dom";
-import Sidebar from "../components/sidebar";
 import ErrorPage from "../pages/NotFount";
+import Root from "../pages/root";
+import Students from "../pages/students";
+import Teacher from "../pages/teacher";
 
 const Approuter =createBrowserRouter([
     {
-        path:"/",
-        element:<Sidebar/>,
-        errorElement:<ErrorPage/>
+        path:"",
+        element:<Root/>,
+        errorElement:<ErrorPage/>,
+        children:[
+            {
+                path:"",
+                element:<Students/>,
+                errorElement:<ErrorPage/>
+            },
+            {
+                path:"teacher",
+                element:<Teacher/>,
+                errorElement:<ErrorPage/>
+            }
+        ]
     },
 
 ],
