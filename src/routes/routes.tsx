@@ -24,12 +24,12 @@ import ExamSchedule from "../pages/Exam/examschedule";
 const Approuter = createBrowserRouter(
   [
     {
-      path: "",
+      path: "/",
       element: <Root />,
       errorElement: <ErrorPage />,
       children: [
         {
-          path: "",
+          path: "/",
           element: <AddandEditStudent />,
           errorElement: <ErrorPage />,
         },

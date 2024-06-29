@@ -5,133 +5,138 @@ import { SimpleTreeView } from "@mui/x-tree-view/SimpleTreeView";
 import { TreeItem } from "@mui/x-tree-view/TreeItem";
 import { Link } from "react-router-dom";
 const Sidebar = () => {
+  const randomId=()=>{
+ let id =   Math.random().toString().slice(2);
+    return id;
+  }
   return (
     <>
-      <Box sx={{ minHeight: 352, minWidth: 250 }}>
+      <Box sx={{ minHeight: 352, minWidth: 250,}}>
         <div className="flex justify-center items-center">
           <img src={logos} className="w-24 h-24" />
         </div>
-        <SimpleTreeView>
-          <TreeItem itemId="student" label="Students">
+        <SimpleTreeView >
+          <TreeItem itemId={randomId()} label="Students" sx={{fontSize:"20px",color:"red", fontWeight:"bold"}}>
             <Link to={""}>
               {" "}
               <TreeItem
-                itemId="student-add-edit"
+              sx={{fontSize:"20px",color:"Green", fontWeight:"bold"}}
+                itemId={randomId()}
                 label="Student Add/Edit Screen"
               />
             </Link>
             <Link to={"studentlist"}>
               {" "}
-              <TreeItem itemId="student-list" label="Student List Screen" />
+              <TreeItem itemId={randomId()} label="Student List Screen" />
             </Link>
             <Link to={"transferstudent"}>
               {" "}
               <TreeItem
-                itemId="transfer-student-screen"
+                itemId={randomId()}
                 label="Transfer Student Screen"
               />
             </Link>
           </TreeItem>
-          <TreeItem itemId="teacher" label="Teacher">
+          <TreeItem itemId={randomId()} label="Teacher">
             <Link to={"addandEeditteacher"}>
               {" "}
               <TreeItem
-                itemId="teacher-add-edit"
+                itemId={randomId()}
                 label="Teacher Add/Edit Screen"
               />
             </Link>
             <Link to={"teacherlist"}>
               {" "}
-              <TreeItem itemId="teacher-list" label="Teacher List Screen" />
+              <TreeItem itemId={randomId()} label="Teacher List Screen" />
             </Link>
             <Link to={"teacherallocation"}>
               {" "}
               <TreeItem
-                itemId="teacher-allocation-screen"
+                itemId={randomId()}
                 label="Teacher Allocation Screen"
               />
             </Link>
           </TreeItem>
-          <TreeItem itemId="subject" label="Subjects">
+          <TreeItem itemId={randomId()} label="Subjects">
             <Link to={"addandeditsubject"}>
               {" "}
               <TreeItem
-                itemId="subject-add-edit"
+                itemId={randomId()}
                 label="Subject Add/Edit Screen"
               />
             </Link>
             <Link to={"subjectlist"}>
               {" "}
-              <TreeItem itemId="subject-list" label="Subject List Screen" />
+              <TreeItem itemId={randomId()} label="Subject List Screen" />
             </Link>
           </TreeItem>
-          <TreeItem itemId="school" label="School">
+          <TreeItem itemId={randomId()} label="School">
             <Link to={"registration"}>
               {" "}
-              <TreeItem itemId="registration" label="Registration" />
+              <TreeItem itemId={randomId()} label="Registration" />
             </Link>
           </TreeItem>
-          <TreeItem itemId="syllabus" label="Syllabus">
+          <TreeItem itemId={randomId()} label="Syllabus">
             <Link to={"syllabusform"}>
               {" "}
-              <TreeItem itemId="syllabus-form" label="Syllabus Form" />
+              <TreeItem itemId={randomId()} label="Syllabus Form" />
             </Link>
             <Link to={"syllabuslist"}>
               {" "}
-              <TreeItem itemId="syllabus-screen" label="Syllabus List Screen" />
+              <TreeItem itemId={randomId()} label="Syllabus List Screen" />
             </Link>
           </TreeItem>
-          <TreeItem itemId="class" label="Class">
+          <TreeItem itemId={randomId()} label="Class">
             <Link to={"classform"}>
               {" "}
-              <TreeItem itemId="class-form-screen" label="Class Form Screen" />
+              <TreeItem itemId={randomId()} label="Class Form Screen" />
             </Link>
             <Link to={"classlist"}>
               {" "}
-              <TreeItem itemId="class-list-screen" label="Class List Screen" />
+              <TreeItem itemId={randomId()} label="Class List Screen" />
             </Link>
           </TreeItem>
-          <TreeItem itemId="fee" label="Fee">
+          <TreeItem itemId={randomId()} label="Fee">
             <Link to={"feestructure"}>
               {" "}
               <TreeItem
-                itemId="fee-structure-screen"
+                itemId={randomId()}
                 label="Fee Structure Screen"
               />
             </Link>
             <Link to={"feesubmission"}>
               {" "}
               <TreeItem
-                itemId="fee-submission-screen"
+                itemId={randomId()}
                 label="Fee Submission Screen"
               />
             </Link>
             <Link to={"feevoucher"}>
               {" "}
               <TreeItem
-                itemId="fee-voucher-screen"
+                itemId={randomId()}
                 label="Fee Voucher Screen"
               />
             </Link>
           </TreeItem>
-          <TreeItem itemId="admission" label="Admission">
+          <TreeItem itemId={randomId()} label="Admission">
             <Link to={"admissionscreen"}>
               {" "}
               <TreeItem itemId="adission-screen" label="Admission Screen" />
             </Link>
           </TreeItem>
-          <TreeItem itemId="exam" label="Exam">
+          <TreeItem itemId={randomId()} label="Exam">
             <Link to={"examschedule"}>
               {" "}
               <TreeItem
-                itemId="exam-schedule-screen"
+                itemId={randomId()}
                 label="Exam-Schedule-Screen"
               />
             </Link>
             <Link to={"examresult"}>
               {" "}
               <TreeItem
-                itemId="exam-result-screen"
+                itemId={randomId()}
                 label="Exam-Result-Screen"
               />
             </Link>

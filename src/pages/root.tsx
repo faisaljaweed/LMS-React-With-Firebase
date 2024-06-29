@@ -4,8 +4,8 @@ import Sidebar from "./Dashboard/sidebar";
 const Root =()=>{
     return(
         <div className="flex ">
-        <Sidebar/>
-        <main>
+        <Sidebar />
+        <main className="w-full">
             <Outlet/>
         </main>
         </div>
