@@ -17,7 +17,7 @@ const Sidebar = () => {
         </div>
         <SimpleTreeView >
           <TreeItem itemId={randomId()} label="Students" sx={{fontSize:"20px",color:"red", fontWeight:"bold"}}>
-            <Link to={""}>
+            <Link to={"addandedit"}>
               {" "}
               <TreeItem
               sx={{fontSize:"20px",color:"Green", fontWeight:"bold"}}

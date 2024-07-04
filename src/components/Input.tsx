@@ -8,6 +8,7 @@ interface InputProps {
     value?: string | number;
     onChange?: (e: React.ChangeEvent<HTMLInputElement>) => void;
     required?: boolean;
+    checked?:Boolean;
   }
 const Inputs:FC<InputProps> =({type,placeholder,name,value,onChange})=>{
     return(
