@@ -4,6 +4,7 @@ import { IconButton } from "@mui/material";
 import EditIcon from '@mui/icons-material/Edit';
 import DeleteIcon from '@mui/icons-material/Delete';
 import { useNavigate } from "react-router-dom";
+
 const StudentListScreen = ()=>{
    const [students, setStudents] = useState<any[]>([]);
    const navigate = useNavigate();
