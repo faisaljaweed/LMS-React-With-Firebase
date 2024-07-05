@@ -1,7 +1,7 @@
 import { useState } from "react";
 import Buttons from "../../components/button";
 import Inputs from "../../components/Input";
-import { addData,updateData } from "../../firebase/firbaseMethod";
+import { addData } from "../../firebase/firbaseMethod";
 import { useNavigate } from "react-router-dom";
 
 
