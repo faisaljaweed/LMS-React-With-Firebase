@@ -27,12 +27,12 @@ const ClassForm =()=>{
       navigate("/classlist");
     };
   
-    const handleEdit = async () => {
-      // Assuming you have a student ID or key to update
-      const studentId = "some_student_id"; // Replace with actual ID
-      await updateData(`studentlist/${studentId}`, classes);
-      navigate("/studentlist");
-    };
+    // const handleEdit = async () => {
+    //   // Assuming you have a student ID or key to update
+    //   const studentId = "some_student_id"; // Replace with actual ID
+    //   await updateData(`studentlist/${studentId}`, classes);
+    //   navigate("/studentlist");
+    // };
     return(
         <>
         <div className="flex justify-around bg-blue-700">

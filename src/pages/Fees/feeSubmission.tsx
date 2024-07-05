@@ -86,7 +86,7 @@ const FeeSubmission = () => {
     return (Math.random() * 10000).toFixed(0);
   };
 
-  const [receiptNumber, setReceiptNumber] = useState(generateRandomNumber());
+  const [receiptNumber] = useState(generateRandomNumber());
 
   const [fee, setFee] = useState({
     name: "",
@@ -108,12 +108,12 @@ const FeeSubmission = () => {
     navigate("/feevoucher");
   };
 
-  const handleEdit = async () => {
-    // Assuming you have a student ID or key to update
-    const studentId = "some_student_id"; // Replace with actual ID
-    await updateData(`studentlist/${studentId}`, fee);
-    navigate("/studentlist");
-  };
+//   const handleEdit = async () => {
+//     // Assuming you have a student ID or key to update
+//     const studentId = "some_student_id"; // Replace with actual ID
+//     await updateData(`studentlist/${studentId}`, fee);
+//     navigate("/studentlist");
+//   };
 
   useEffect(() => {
     // Update the fee state with the generated receipt number on component mount
