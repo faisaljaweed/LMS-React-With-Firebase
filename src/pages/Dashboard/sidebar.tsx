@@ -29,13 +29,13 @@ const Sidebar = () => {
               {" "}
               <TreeItem itemId={randomId()} label="Student List Screen" />
             </Link>
-            <Link to={"transferstudent"}>
+            {/* <Link to={"transferstudent"}>
               {" "}
               <TreeItem
                 itemId={randomId()}
                 label="Transfer Student Screen"
               />
-            </Link>
+            </Link> */}
           </TreeItem>
           <TreeItem itemId={randomId()} label="Teacher">
             <Link to={"addandEeditteacher"}>
@@ -49,13 +49,13 @@ const Sidebar = () => {
               {" "}
               <TreeItem itemId={randomId()} label="Teacher List Screen" />
             </Link>
-            <Link to={"teacherallocation"}>
+            {/* <Link to={"teacherallocation"}>
               {" "}
               <TreeItem
                 itemId={randomId()}
                 label="Teacher Allocation Screen"
               />
-            </Link>
+            </Link> */}
           </TreeItem>
           <TreeItem itemId={randomId()} label="Subjects">
             <Link to={"addandeditsubject"}>
